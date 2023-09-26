@@ -2,7 +2,7 @@ Astronomical picture a day is a small project showcasing the beautiful astronomi
 
 ## Check out the project live
 
-<!-- [astronomical-picture-a-day.vercel.app]() -->
+Visit the live project at [astronomical-picture-a-day.vercel.app](https://astronomical-picture-of-the-day.vercel.app/)
 
 ## Getting Started
 
@@ -23,6 +23,15 @@ Install packages
 ```bash
 npm install
 ```
+
+Create local env file called `.env.local`
+
+```.env
+NASA_API_KEY=your-nasa-api-key
+NEXT_PUBLIC_NASA_API_KEY=your-nasa-api-key
+```
+
+> Visit the [NASA API Website](https://api.nasa.gov/) to get your key
 
 Run the server
 
