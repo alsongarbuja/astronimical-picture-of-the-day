@@ -10,7 +10,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb))
-  );
+  ); */
+  background: url('/images/space_star.jpg') no-repeat center fixed;
+  background-size: cover;
 }

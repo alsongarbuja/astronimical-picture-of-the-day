@@ -1,33 +1,37 @@
-"use client"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-
-import { SwitchCamera, CalendarClock, Grid } from "lucide-react"
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavigationBar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-12 left-1/2 -translate-x-1/2 bg-white text-black p-4 rounded-lg">
-      <ul className="flex gap-12">
+    <nav className="py-8 mx-8 border-b-2 border-white">
+      <ul className="max-w-7xl w-[90%] mx-auto flex gap-12 justify-end">
         <li>
-          <Link href="/" className={`${pathname==="/"&&'text-nasa-red'}`}>
-            <SwitchCamera />
+          <Link href="/" className={`${pathname === "/" && "text-nasa-red"}`}>
+            Home
           </Link>
         </li>
         <li>
-          <Link href="/daterange" className={`${pathname==="/daterange"&&'text-nasa-red'}`}>
-            <CalendarClock />
+          <Link
+            href="/daterange"
+            className={`${pathname === "/daterange" && "text-nasa-red"}`}
+          >
+            Date
           </Link>
         </li>
         <li>
-          <Link href="/random" className={`${pathname==="/random"&&'text-nasa-red'}`}>
-            <Grid />
+          <Link
+            href="/random"
+            className={`${pathname === "/random" && "text-nasa-red"}`}
+          >
+            Random
           </Link>
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default NavigationBar
+export default NavigationBar;
